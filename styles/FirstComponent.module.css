@@ -1,0 +1,36 @@
+/* YourComponent.module.css */
+
+.firstComponentContent {
+    display: flex;
+  }
+  
+  .leftColumn {
+    padding: 20px;
+    width: 40%;
+  }
+  
+  .rightColumn {
+    position: relative;
+    width: 60%;
+  }
+  
+  .imageOverlay .image2 img {
+    float: right;
+    margin-right: 50px;
+    margin-top: -100px;
+  }
+  .imageOverlay .image1{
+    z-index: 0;
+    position: relative;
+  }
+  .imageOverlay .image2{
+    z-index: 1;
+    position: relative;;
+  }
+  
+  .buttonsContainer {
+    margin-top: 15px;
+  }
+  
+  /* Add more styles as needed */
+  
