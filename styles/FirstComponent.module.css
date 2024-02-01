@@ -2,22 +2,61 @@
 
 .firstComponentContent {
     display: flex;
+    width: 86%;
+    margin: auto;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 200px;
   }
+  .firstComponent{
+    background-color: #541a25;
+    color: white;
+  }
+  .yellowText{
+    color: #f8b400;
+  }
+  .leftColumnContent button{
+    background-color: transparent;
+    
+  }
+  .yogaOffering{
+    border-color: white;
+    color:white;
+    padding: 15px 25px;
+  }
+  .leftColumnContent p, .leftColumnContent button{
+    font-family: sans-serif;
+  }
+  .leftColumnContent p{
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .leftColumnContent h2{
+    font-size: 40px;
+    font-weight: lighter;
+  }
+  .intorButton{
+    border-color: #f8b400;
+    padding: 10px 20px;
+  }
+
   
   .leftColumn {
-    padding: 20px;
+    padding: 40px;
     width: 40%;
+
   }
   
   .rightColumn {
     position: relative;
     width: 60%;
+    display: grid;
+    place-items: center;
   }
   
   .imageOverlay .image2 img {
-    float: right;
-    margin-right: 50px;
-    margin-top: -100px;
+    margin-left: 20%;
+    margin-top: -200px;
   }
   .imageOverlay .image1{
     z-index: 0;
@@ -32,5 +71,43 @@
     margin-top: 15px;
   }
   
-  /* Add more styles as needed */
+  @media screen and (max-width: 1280px) {
+    .imageOverlay .image1, .imageOverlay .image2 {
+        width: 400px;
+    }
+    .imageOverlay .image2 img {
+      margin-top: -120px;
+    }
+    .imageOverlay .image1 img,
+    .imageOverlay .image2 img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 980px){
+  .firstComponentContent{
+    display: block;
+  }
+  .leftColumn {
+    width: 100%;
+    padding: 0;
+
+  }
+}
+
+@media screen and (max-width: 575px){
+  .imageOverlay .image2 img {
+    margin-top: unset;
+    margin-left: unset;
+  }
+
+  .imageOverlay .image1, .imageOverlay .image2 {
+    width: 100%;
+}
+  .rightColumn{
+    width: 100%;
+  }
+
+}
+
   

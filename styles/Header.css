@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    
+  }
+  
+  /* Basic styling for the header */
+  header {
+    background-color: #0e0e0e;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h2 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    display: flex;
+  }
+  
+  nav {
+    margin-left: auto;
+    padding-right: 30px;
+    height: 40px;
+    display: flex; /* Add this line to make the links center */
+    align-items: center; /* Add this line to make the links center */
+  }
+  
+  nav li {
+    margin-left: 60px;
+  }
+  .main-logo-pic{
+    margin-left: 20px;
+  }
+  
+  nav a {
+    color: #F8B400;
+    font-size: 13px;
+    text-decoration: none;
+    position: relative;
+    font-family: 'Albert Sans, Helvetica, Arial, Lucida, sans-serif';
+    font-weight: bold;
+    /* Add position relative to contain pseudo-element */
+  }
+  
+  /* Hover effect */
+  nav a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f3f2ef;
+    transition: width 0.3s;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+  nav a:hover{
+    color: white;
+  }
+  /* Adjustments for smaller screens */
+  
+  
+  @media screen and (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+    .navbar a {
+        display: none;
+    }
+  
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+  
+    .navbar.responsive {
+        position: relative;
+    }
+  
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+  
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .grid-container {
+      
+      flex-direction: column;
+    }
+    .banner-text h1{
+      font-size: 60px;
+    }
+    .banner-text h2{
+      font-size: 40px;
+    }
+    .banner-text h3{
+      font-size: 20px;
+    }
+  }
+  
+  /* .menu-icon {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: none;
+  } */
+  .navbar .icon {
+    display: none;
+  }
+  
+  /* Styling for the banner section */
+  .banner {
+    background-image: url('../public/images/MA-Yoga-Kim-Jay-Photo-12.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    
+    padding: 50px 0;
+    height: 400px;
+  
+  }
+  
+  .banner-text {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left; /* Add this line to set text alignment to left */
+  }
+  
+  .banner-text h1 {
+    font-size: 95px;
+    color: #F8B400;
+    text-align: left;
+    margin: 0; /* Remove margin to eliminate default spacing */
+  }
+  
+  .banner-text h2 {
+    font-size: 50px;
+    text-align: left;
+    margin: 0; /* Remove margin to eliminate default spacing */
+  }
+  
+  .banner-text h3 {
+    font-size: 24px;
+    text-align: left;
+    margin: 0; /* Remove margin to eliminate default spacing */
+  }
+  
+  /* .banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  } */
+  
+  .banner p {
+    font-size: 1.2em;
+  }
+  
+  /* Styling for the footer */
+  
+  .grid-container {
+    background-color: black;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    
+    
+     /* Three columns with equal width */
+    
+  }
+  
+  .grid-item {
+    /* Add styles for individual items inside the grid */
+    
+    padding: 20px;
+    
+    text-align: center;
+  }
+  
+  .grid-item a, p{
+    text-decoration: none;
+    color: #F8B400;
+  }
+  .grid-item p{
+    padding-top: 20px;
+    font-size: 18px;
+  }
+  .grid-item ul{
+    list-style: none;
+  }
+  .grid-item li{
+    color: #F8B400;
+    padding-top: 20px;
+    font-size: 18px;
+  }
+  .info-txt, .contact-txt{
+    font-weight: bold;
+    padding-bottom: 30px;
+  }

@@ -1,6 +1,7 @@
 import React from 'react';
 import fcstyles from '../styles/FirstComponent.module.css'; // Import your CSS file for styling
 
+
 const FirstComponent = () => {
   return (
     <div className={fcstyles.firstComponent}>
@@ -12,9 +13,10 @@ const FirstComponent = () => {
                   Click the button below to find out more information about our studio, classes,
                    and special offers for new members.</p>
               
-                <button>Button 1</button>
-                <button>Button 2</button>
-                <h2>Try Our 30 Day Intro Special</h2>
+                <button className={fcstyles.yogaOffering}>YOGA OFFERINGS</button>
+                <h2 className={fcstyles.yellowText}>Try Our 30 Day Intro Special</h2>
+                <p>Enjoy 30 days of unlimited yoga and sacred sound at our beautiful urban sanctuary.</p>
+                <button className={`${fcstyles.yellowText} ${fcstyles.intorButton}`}>30- DAY INTRO PASS</button>
           
             </div>
         </div>
@@ -33,6 +35,7 @@ const FirstComponent = () => {
             </div>
         </div>
       </div>
+      
     </div>
   );
 };
