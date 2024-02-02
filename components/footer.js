@@ -14,7 +14,7 @@ const Footer = () => {
             alt="logo"
             className="main-logo-pic w-20 h-20 m-auto"
           />
-          <p>© 2024 MĀ Wellness</p>
+          <p>© 2024 OAZ</p>
         </div>
         <div className="grid-item">
           <ul>
@@ -29,7 +29,7 @@ const Footer = () => {
             <li className="contact-txt">CONTACT INFO</li>
             <li>539 Herald Street</li>
             <li>250-880-0553</li>
-            <li><a href="mailto:info@mawellnessandyoga.ca">info@mawellnessandyoga.ca</a></li>
+            <li><a href="mail:info@oaz.ca">info@oaz.ca</a></li>
             <li><a href="#">Map & Directions</a></li>
           </ul>
         </div>
