@@ -12,7 +12,7 @@ const Footer = () => {
             src={logo} 
          
             alt="logo"
-            className="main-logo-pic w-20 h-20"
+            className="main-logo-pic w-20 h-20 m-auto"
           />
           <p>© 2024 MĀ Wellness</p>
         </div>
