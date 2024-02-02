@@ -1,0 +1,36 @@
+.testemonials{
+    background-image: url(/images/bg-second.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.testemonialImage{
+    display: flex;
+    justify-content: center;
+}
+.testmonialsContent{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family: sans-serif;
+}
+.testmonialsContent h3{
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+.testmonialsContent p{
+    width: 70%;
+    margin: auto;
+    line-height: 25px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.testmonialsContent h5{
+    color: #f8b400;
+    font-size: 22px;
+}

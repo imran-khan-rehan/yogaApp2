@@ -23,7 +23,8 @@ const Navbar = () => {
       <nav className="navbar" id="myNavbar">
         <ul className="nav-links">
           <li><a href="/">HOME</a></li>
-          <li><a href="/event">EVENT</a></li>
+          <li><a href="/events1">EVENT1</a></li>
+          <li><a href="/events2">EVENT2</a></li>
           <li>
             <a href="javascript:void(0);" className="icon" onClick={toggleMenu}>
               &#9776;

@@ -1,0 +1,19 @@
+.forcedHeightUnset{
+    height: unset !important;
+}
+
+@media screen and (max-width: 989px) {
+    .itcontent {
+      flex-direction: column;
+    }
+  
+    .itright-col {
+      width: 100% !important;
+    }
+  
+    .itimage-container {
+      width: 100% !important;
+      margin-bottom: 20px; /* Add some spacing between image and text */
+    }
+  }
+  

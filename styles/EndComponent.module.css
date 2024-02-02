@@ -1,0 +1,42 @@
+.endSection{
+    background:#541a25;
+    text-align: center;
+}
+.endSectionContent{
+    width: 70%;
+    margin: auto;
+    padding-top: 40px;
+    font-family: sans-serif;
+    color: white;
+}
+.endSectionContent h3{
+    color:#f8b400;
+    font-weight: lighter;
+    font-size: 30px;
+}
+.endSectionContent h2{
+    font-weight: lighter;
+    font-size: 40px;
+}
+.endSectionContent p{
+    font-size: 18px;
+    line-height: 25px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.signUpBtn{
+    color: #f8b400;
+    background-color: #541a25;
+    border-color: #f8b400;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.curvedBottom{
+    background-image: url(/images/curved-bottom.svg);
+    background-size: 100% 100px;
+    bottom: 0;
+    height: 100px;
+    z-index: 1;
+    transform: scale(1,1);
+}

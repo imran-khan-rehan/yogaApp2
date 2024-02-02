@@ -1,13 +1,8 @@
 import Header from '../components/Header';
 import Footer from '../components/footer';
 import FirstComponent from '@/components/FirstComponent';
-import ImageAndText from '../components/imageAndText';
 import '../app/globals.css';
-import ClinicYoga from '@/components/clinicYoga';
 import Navbar from '../components/navbar';
-import Offerings from '@/components/Offerings';
-import YogaTeacher from '@/components/YogaTeacher';
-import Testemonials from '@/components/Testemonials';
 import EndComponent from '@/components/EndCompnent';
 export default function Home() {
     return (
@@ -15,13 +10,8 @@ export default function Home() {
             <Navbar/>
             <Header />
             <FirstComponent/>
-            <ClinicYoga/>
-            <Offerings/>
-            <YogaTeacher/>
-            <Testemonials/>
             <EndComponent/>
             <Footer />
         </div>
     );
 }
-
