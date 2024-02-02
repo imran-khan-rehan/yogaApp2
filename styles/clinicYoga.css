@@ -1,8 +1,8 @@
 .curvedBottom{
     background-image: url(/images/curved-bottom.svg);
-    background-size: 100% 100px;
+    background-size: 100% 45px;
     bottom: 0;
-    height: 100px;
+    height: 45px;
     z-index: 1;
     transform: scale(1,1);
 }
