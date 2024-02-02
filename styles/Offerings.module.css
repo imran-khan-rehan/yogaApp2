@@ -11,6 +11,12 @@
     width: 80%;
     margin: auto;
 }
+.cardDetails h3{
+    color:#541a25;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bolder !important;
+}
 .cardImage img{
     width: 100%;
 }
