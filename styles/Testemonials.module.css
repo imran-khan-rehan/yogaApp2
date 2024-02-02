@@ -34,3 +34,8 @@
     color: #f8b400;
     font-size: 22px;
 }
+
+@media (max-width: 540px){
+.testmonialsContent p{
+    width: 100%;}
+}

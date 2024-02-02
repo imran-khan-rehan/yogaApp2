@@ -10,6 +10,7 @@ const Header = () => {
         <h2>Victoria, BC</h2>
         <h3>An integrated approach to wellness & yoga</h3>
       </div>
+      <div className="bottom-shadow"></div>
     </section>
   );
 };

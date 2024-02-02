@@ -39,4 +39,11 @@
     height: 100px;
     z-index: 1;
     transform: scale(1,1);
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 540px){
+    .endSectionContent{
+        width: 100%;
+    }
 }

@@ -1,0 +1,143 @@
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 20px;
+}
+.logo img{
+    width: 90px;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: background-color 0.3s;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu a {
+    color: gold;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.phone-numbers {
+    display: none;
+}
+.mobile-call-whatsapp{
+        display: none;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        justify-content: space-around;
+        left:0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .mobile-call-whatsapp div{
+        padding:10px;
+    }
+    .mobile-call-whatsapp div img{
+        width: 40px;
+    }
+    .mobile-call-whatsapp .call{
+        background-color: #0b084d;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+		color: white;
+    }
+    .mobile-call-whatsapp .whatsapp{
+        background-color: #06bf06;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+		color: white;
+    }
+    .desktop-whatsapp{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        top: 108px;
+        left: 0;
+        background-color: #541a25;
+        color:white;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+    .menu-flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu a {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .bar.change:nth-child(1) {
+        transform: rotate(-45deg) translate(-6px, 7.3px);
+    }
+
+    .bar.change:nth-child(2) {
+        opacity: 0;
+    }
+
+    .bar.change:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .phone-numbers {
+        display: block;
+        transition: max-height 0.3s ease-out;
+    }
+    
+
+}
+@media (max-width: 540px) {
+    .mobile-call-whatsapp{
+        display: flex !important;
+    }
+    .desktop-whatsapp{
+        display: none;
+    }
+}

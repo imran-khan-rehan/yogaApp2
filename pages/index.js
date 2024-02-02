@@ -1,7 +1,6 @@
 import Header from '../components/Header';
 import Footer from '../components/footer';
 import FirstComponent from '@/components/FirstComponent';
-import ImageAndText from '../components/imageAndText';
 import '../app/globals.css';
 import ClinicYoga from '@/components/clinicYoga';
 import Navbar from '../components/navbar';

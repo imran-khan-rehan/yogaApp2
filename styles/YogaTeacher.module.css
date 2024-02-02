@@ -58,7 +58,14 @@
     color: black;
     margin-bottom: 20px;
   }
-  
+  .yImage{
+    width: 45%;
+    display: flex;
+    align-items: center;
+  }
+  .yImage img{
+    width: 100%;
+  }
   .button {
     display: inline-block;
     padding: 10px 20px;
@@ -101,3 +108,18 @@
     opacity: 0.3;
   }
   
+  @media (max-width: 822px){
+    .yogaTeacher{
+      display: block;
+      width: 90%;
+
+    }
+    .yImage, .yText{
+      width: 100%;
+      padding: 0;
+      margin: auto;
+    }
+    .yImage{
+      margin-top: 40px;
+    }
+  }

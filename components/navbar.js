@@ -1,39 +1,36 @@
-// components/Header.js
 import React from 'react';
-import Image from 'next/image';
-import logo from "../public/images/logo.png";
-import '../styles/Header.css';
+import '../styles/Navbar.css';
+import $ from 'jquery';
 
 const Navbar = () => {
-  const toggleMenu = () => {
-    // Add your menu toggle logic here
-    // You can use state to manage the menu visibility
-    // Example: setMenuVisible(!menuVisible);
-  };
+    const toggleMenu = () => {
+        const menu = document.querySelector('.menu');
+        const iconBars = document.querySelectorAll('.bar');
+        $(menu).slideToggle();
+        menu.classList.toggle('show');
+        iconBars.forEach(bar => {
+            bar.classList.toggle('change');
+        });
+    };
 
-  return (
-    <header>
-      <Image
-        src={logo}
-     
-        alt="logo"
-        className="main-logo-pic w-20 h-20"
-      />
-
-      <nav className="navbar" id="myNavbar">
-        <ul className="nav-links">
-          <li><a href="/">HOME</a></li>
-          <li><a href="/events1">EVENT1</a></li>
-          <li><a href="/events2">EVENT2</a></li>
-          <li>
-            <a href="javascript:void(0);" className="icon" onClick={toggleMenu}>
-              &#9776;
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  );
+    return (
+        <div className="navbar">
+            <div className="logo"><a href='/'><img src="/images/logo.png" alt="Logo" /></a></div>
+            <div className="menu-icon" onClick={toggleMenu}>
+                <div className="bar"></div>
+                <div className="bar"></div>
+                <div className="bar"></div>
+            </div>
+            <div className="menu">
+                <div className="menu-flex">
+                    <a href="/">Home</a>
+                    <a href="/events1">Event 1</a>
+                    <a href="/events2">Event 2</a>
+                </div>
+            </div>
+    
+        </div>
+    );
 };
 
 export default Navbar;

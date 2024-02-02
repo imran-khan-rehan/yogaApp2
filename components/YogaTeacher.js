@@ -15,7 +15,7 @@ const YogaTeacher = () => {
                     <button className={styles.button}>VIEW PROGRAMS</button>
                 </div>
                 <div className={styles.yImage}>
-                    <img src="/images/ytImage.webp" width="513" height="343" alt="" />
+                    <img src="/images/ytImage.webp" alt="" />
                 </div>
             </div>
             <div className={styles.curvedBottom}></div>
